@@ -1,0 +1,25 @@
+### Exemples de requêtes pour tester l'API
+### À utiliser avec Postman, ou avec l'extension "REST Client" de VS Code.
+### Le serveur doit tourner (npm start) sur http://localhost:3000
+
+### 1. Message d'accueil
+GET http://localhost:3000/
+
+### 2. Voir toute la blockchain
+GET http://localhost:3000/blockchain
+
+### 3. Enregistrer une nouvelle transaction (en attente)
+POST http://localhost:3000/transaction
+Content-Type: application/json
+
+{
+  "amount": 10,
+  "sender": "Alice",
+  "recipient": "Bob"
+}
+
+### 4. Miner un bloc (inscrit les transactions en attente dans la chaîne)
+GET http://localhost:3000/mine
+
+### 5. Vérifier que la chaîne n'a pas été falsifiée
+GET http://localhost:3000/valid
