@@ -1,0 +1,13 @@
+# Dépendances Node.js (réinstallées avec `npm install`)
+node_modules/
+
+# Journaux et fichiers temporaires
+npm-debug.log*
+*.log
+.env
+
+# Systèmes
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

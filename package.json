@@ -1,0 +1,28 @@
+{
+  "name": "blockchain-transactions-bancaires",
+  "version": "1.0.0",
+  "description": "Blockchain en Node.js pour la securisation des transactions bancaires (memoire de master, IUG, Universite de Douala).",
+  "main": "src/api.js",
+  "scripts": {
+    "start": "node src/api.js",
+    "dev": "nodemon src/api.js",
+    "demo": "node examples/demo.js"
+  },
+  "keywords": [
+    "blockchain",
+    "nodejs",
+    "express",
+    "proof-of-work",
+    "sha256",
+    "banking",
+    "securite"
+  ],
+  "author": "Gaby Beatrice Tchounla Nguenle",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.22.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
